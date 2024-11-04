@@ -12,7 +12,6 @@ BOT_NAME = "robot_work"
 SPIDER_MODULES = ["robot_work.spiders"]
 NEWSPIDER_MODULE = "robot_work.spiders"
 
-
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "robot_work (+http://www.yourdomain.com)"
 
@@ -66,6 +65,10 @@ ROBOTSTXT_OBEY = True
 #    "robot_work.pipelines.RobotWorkPipeline": 300,
 #}
 
+ITEM_PIPELINES = {
+    'robot_work.pipelines.MongoDBPipeline': 300,
+}  #启用pipline
+
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True
@@ -89,11 +92,16 @@ ROBOTSTXT_OBEY = True
 
 # Set settings whose default value is deprecated to a future-proof value
 
+# settings.py
 
-REDIS_URL = 'redis://localhost:6379/0'
-SCHEDULER = "scrapy_redis.scheduler.Scheduler"
+DOWNLOADER_MIDDLEWARES = {
+    'robot_work.middlewares.CustomHeadersMiddleware': 543,  # 确保路径正确
+}  #启动中间件
+
+REDIS_URL = 'redis://localhost:6379/0'  #Redis配置
+SCHEDULER = "scrapy_redis.scheduler.Scheduler"  #调度器设置
 SCHEDULER_PERSIST = True  # 保持调度器的状态
-DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
+DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"  #自动去重
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
-FEED_EXPORT_ENCODING = "utf-8"
+FEED_EXPORT_ENCODING = "utf-8"  #编码格式

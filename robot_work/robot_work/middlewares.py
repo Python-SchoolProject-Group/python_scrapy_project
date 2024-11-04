@@ -101,3 +101,14 @@ class RobotWorkDownloaderMiddleware:
 
     def spider_opened(self, spider):
         spider.logger.info("Spider opened: %s" % spider.name)
+
+
+# middlewares.py
+
+class CustomHeadersMiddleware:
+    def process_request(self, request, spider):
+        # 设置自定义请求头
+        request.headers[
+            'User-Agent'] = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
+        request.headers['Accept-Language'] = 'en-US,en;q=0.5'
+        request.headers['Accept'] = 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
