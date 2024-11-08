@@ -22,17 +22,26 @@ class MusicZDetailSpider(RedisSpider):
         tag = '-'.join(tags) if tags else '无'
 
         # 获取歌单介绍
-        text = soup.select_one('#album-desc-more').get_text().replace('\n', '').replace(',', '，') if soup.select(
-            '#album-desc-more') else '无'
+        text_element = soup.select_one('#album-desc-more')
+        text = text_element.get_text().replace('\n', '').replace(',', '，') if text_element else '无'
 
-        # 获取收藏量、播放量、歌曲数和评论数
-        collection = soup.select_one('#content-operation i').get_text().replace('(', '').replace(
-            ')') if soup.select_one('#content-operation i') else '无'
+        # 获取收藏量
+        collection_element = soup.select_one('#content-operation i')
+        collection = collection_element.get_text().replace('(', '').replace(')', '') if collection_element else '无'
+
+        # 获取播放量、歌曲数和评论数
         play = soup.select_one('.s-fc6').get_text() if soup.select_one('.s-fc6') else '无'
         songs = soup.select_one('#playlist-track-count').get_text() if soup.select_one('#playlist-track-count') else '无'
         comments = soup.select_one('#cnt_comment_count').get_text() if soup.select_one('#cnt_comment_count') else '无'
 
         # 创建并保存 MusicDetailItem 实例
-        item = MusicDetailItem(title=title, tag=tag, description=text, collection=collection, play=play, songs=songs,
-                               comments=comments)
+        item = MusicDetailItem(
+            title=title,
+            tag=tag,
+            description=text,
+            collection=collection,
+            play=play,
+            songs=songs,
+            comments=comments
+        )
         yield item

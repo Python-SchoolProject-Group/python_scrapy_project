@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root    # 设置管理员用户名
+      MONGO_INITDB_ROOT_PASSWORD: 123456  # 设置管理员密码
+    ports:
+      - "27017:27017" # 公开 MongoDB 的默认端口
+    volumes:
+      - mongo_data:/data/db # 数据卷挂载到 MongoDB 的数据目录
+
+  redis:
+    image: redis:latest
+    container_name: redis_container
+    ports:
+      - "6379:6379"  # 将主机的 6379 端口映射到 Redis 容器的 6379 端口
+    volumes:
+      - redis_data:/data # 持久化存储 Redis 数据
+    restart: always  # 设置 Redis 自动重启
+
+volumes:
+  mongo_data:
+    driver: local
+  redis_data:
+    driver: local
