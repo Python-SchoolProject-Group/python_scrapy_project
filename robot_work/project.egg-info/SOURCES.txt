@@ -1,0 +1,15 @@
+setup.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt
+robot_work/__init__.py
+robot_work/items.py
+robot_work/middlewares.py
+robot_work/pipelines.py
+robot_work/push_initial_urls.py
+robot_work/settings.py
+robot_work/spiders/__init__.py
+robot_work/spiders/music_detail.py
+robot_work/spiders/music_index.py

@@ -19,8 +19,6 @@ class MusicListSpider(RedisSpider):
             url = f'https://music.163.com/discover/playlist/?cat=欧美&order=hot&limit=35&offset={offset}'
             self.r.lpush(self.redis_key, url)  # 将生成的 URL 推送到 Redis
         while True:
-            if self.r.scard(self.redis_key) == 0:
-                break
             url = self.r.rpop(self.redis_key)
             url = url.decode('utf-8')  # 将 bytes 转换为 str
             print("从Redis拿出来的" + url)
