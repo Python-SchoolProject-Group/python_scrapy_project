@@ -50,7 +50,6 @@ pyquery==2.0.1
 python-dateutil==2.9.0.post0
 python-scrapyd-api==2.1.2
 pytz==2024.2
-pywin32==308
 queuelib==1.7.0
 redis==5.2.0
 requests==2.32.3
