@@ -1,5 +1,4 @@
 FROM python:3.10.0
-LABEL authors="张洛"
 ADD . /code
 WORKDIR /code
 COPY ../scrapyd.conf /etc/scrapyd/

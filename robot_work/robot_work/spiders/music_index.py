@@ -15,15 +15,12 @@ class MusicListSpider(RedisSpider):
 
     def start_requests(self):
         """生成带有不同 offset 的 URL 并推送到 Redis"""
-        for offset in range(0, 2345, 35):  # 从 0 到 2000，步长为 35
-            url = f'https://music.163.com/discover/playlist/?cat=欧美&order=hot&limit=35&offset={offset}'
+        for offset in range(0, 1715, 35):  # 从 0 到 2000，步长为 35
+            url = f'https://music.163.com/discover/playlist/?cat=华语&order=hot&limit=35&offset={offset}'
             self.r.lpush(self.redis_key, url)  # 将生成的 URL 推送到 Redis
         while True:
-            if self.r.scard(self.redis_key) == 0:
-                break
             url = self.r.rpop(self.redis_key)
-            url = url.decode('utf-8')  # 将 bytes 转换为 str
-            print("从Redis拿出来的" + url)
+            url = url.decode('utf-8')
             yield scrapy.Request(url=url, callback=self.parse)
 
     def parse(self, response):

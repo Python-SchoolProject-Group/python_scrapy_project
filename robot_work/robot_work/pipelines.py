@@ -18,7 +18,7 @@ class RobotWorkPipeline:
 class MongoDBPipeline:
     def __init__(self):
         # 连接到 MongoDB
-        self.client = MongoClient('localhost', 27017, username='root', password='123456')
+        self.client = MongoClient('10.34.40.237', 27017, username='root', password='123456')
         pymongo_logger = logging.getLogger('pymongo')
         pymongo_logger.setLevel(logging.ERROR)
         self.db = self.client['music_datas']
@@ -33,10 +33,7 @@ class MongoDBPipeline:
             spider.name = 'default'
         collection = self.db[collection_name]
         try:
-            logging.info(f"插入产品到MongoDB: {item}")
-            collection.insert_one(dict(item))
             collection.insert_one(ItemAdapter(item).asdict())
-            print("插入成功")
             return item
         except errors.PyMongoError as e:
             spider.logger.error(f"Failed to insert item into MongoDB: {e}")
