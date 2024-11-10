@@ -1,0 +1,29 @@
+INFO - 2024-11-10 16:01:10,669 - process: 14760 - scheduler.py - gerapy.server.core.scheduler - 105 - scheduler - successfully synced task with jobs with force
+ERROR - 2024-11-10 16:01:13,482 - process: 14760 - utils.py - gerapy.server.core.utils - 564 - utils - [WinError 3] 系统找不到指定的路径。: 'C:\\robot_work\\projects'
+Traceback (most recent call last):
+  File "C:\robot_work\.venv\Lib\site-packages\gerapy\server\core\utils.py", line 562, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\robot_work\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\robot_work\.venv\Lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\robot_work\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\robot_work\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\robot_work\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\robot_work\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\robot_work\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\robot_work\.venv\Lib\site-packages\gerapy\server\core\views.py", line 73, in index_status
+    files = os.listdir(path)
+            ^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'C:\\robot_work\\projects'
