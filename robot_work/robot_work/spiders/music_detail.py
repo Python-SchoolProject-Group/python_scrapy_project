@@ -1,3 +1,4 @@
+import redis
 import scrapy
 from itemadapter import ItemAdapter
 from scrapy_redis.spiders import RedisSpider
@@ -6,10 +7,20 @@ from ..items import MusicDetailItem
 from pymongo import MongoClient
 
 
-class MusicZDetailSpider(RedisSpider):
+class MusicDetailSpider(RedisSpider):
     name = 'music_detail_spider'
     redis_key = 'detail_url_queue'  # 从 Redis 获取起始 URL
     collection_name = 'music_detail'
+
+    def __init__(self, *args, **kwargs):
+        super(MusicDetailSpider, self).__init__(*args, **kwargs)
+        self.r = redis.StrictRedis(host='jzhangluo.com', port=6379, db=0, password='qwertyuiop353680509.')
+
+    def start_requests(self):
+        while True:
+            url = self.r.rpop(self.redis_key)
+            url = url.decode('utf-8')
+            yield scrapy.Request(url=url, callback=self.parse)
 
     def parse(self, response):
         soup = BeautifulSoup(response.text, 'html.parser')

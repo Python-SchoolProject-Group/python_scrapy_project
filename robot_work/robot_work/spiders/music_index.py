@@ -11,7 +11,7 @@ class MusicListSpider(RedisSpider):
 
     def __init__(self, *args, **kwargs):
         super(MusicListSpider, self).__init__(*args, **kwargs)
-        self.r = redis.StrictRedis(host='localhost', port=6379, db=0)
+        self.r = redis.StrictRedis(host='jzhangluo.com', port=6379, db=0, password='qwertyuiop353680509.')
 
     def start_requests(self):
         """生成带有不同 offset 的 URL 并推送到 Redis"""
