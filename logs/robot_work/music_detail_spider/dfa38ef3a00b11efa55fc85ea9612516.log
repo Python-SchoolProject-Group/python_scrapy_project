@@ -5584,3 +5584,285 @@ AttributeError: 'str' object has no attribute 'PyMongoError'
 2024-11-11 17:42:05 [music_detail_spider] WARNING: [93mWARNING: String request is deprecated, please use JSON data format. Detail information, please check https://github.com/rmax/scrapy-redis#features[0m
 2024-11-11 17:42:05 [music_detail_spider] WARNING: [93mWARNING: String request is deprecated, please use JSON data format. Detail information, please check https://github.com/rmax/scrapy-redis#features[0m
 2024-11-11 17:42:05 [music_detail_spider] DEBUG: Read 16 requests from 'detail_url_queue'
+2024-11-11 17:43:29 [scrapy.extensions.logstats] INFO: Crawled 161 pages (at 16 pages/min), scraped 113 items (at 16 items/min)
+2024-11-11 17:43:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/playlist?id=6845897480> (referer: None)
+2024-11-11 17:43:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/playlist?id=8402855265> (referer: None)
+2024-11-11 17:43:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/playlist?id=6957296439> (referer: None)
+2024-11-11 17:43:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/playlist?id=7403030418> (referer: None)
+2024-11-11 17:43:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/playlist?id=6847249919> (referer: None)
+2024-11-11 17:43:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/playlist?id=924680166> (referer: None)
+2024-11-11 17:43:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/playlist?id=7572518150> (referer: None)
+2024-11-11 17:43:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/playlist?id=8376978101> (referer: None)
+2024-11-11 17:43:30 [root] INFO: 插入产品到MongoDB: {'collection': '播放',
+ 'comments': '268',
+ 'description': '介绍：让旧时的CD，唱出喜怒哀乐，和所有难忘的记忆',
+ 'play': '25070944',
+ 'songs': '187',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.163.com/playlist?id=6845897480>
+{'collection': '播放',
+ 'comments': '268',
+ 'description': '介绍：让旧时的CD，唱出喜怒哀乐，和所有难忘的记忆',
+ 'play': '25070944',
+ 'songs': '187',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:30 [root] INFO: 插入产品到MongoDB: {'collection': '播放',
+ 'comments': '254',
+ 'description': '介绍：东西南北中，各路Rapper齐相聚！“中文说唱超级联赛” '
+                '正式打响，《中国说唱巅峰对决2023》音频现已登陆云村，每周六18点音频上线。收听巅峰音频，与云村homie聊聊真Hip-Hop！',
+ 'play': '3497600',
+ 'songs': '142',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.163.com/playlist?id=8402855265>
+{'collection': '播放',
+ 'comments': '254',
+ 'description': '介绍：东西南北中，各路Rapper齐相聚！“中文说唱超级联赛” '
+                '正式打响，《中国说唱巅峰对决2023》音频现已登陆云村，每周六18点音频上线。收听巅峰音频，与云村homie聊聊真Hip-Hop！',
+ 'play': '3497600',
+ 'songs': '142',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/playlist?id=9251843597> (referer: None)
+2024-11-11 17:43:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/playlist?id=8804782200> (referer: None)
+2024-11-11 17:43:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/playlist?id=8497878200> (referer: None)
+2024-11-11 17:43:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/playlist?id=8484246204> (referer: None)
+2024-11-11 17:43:30 [root] INFO: 插入产品到MongoDB: {'collection': '播放',
+ 'comments': '6',
+ 'description': '介绍：1999年经典歌曲精选',
+ 'play': '604412',
+ 'songs': '100',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.163.com/playlist?id=6957296439>
+{'collection': '播放',
+ 'comments': '6',
+ 'description': '介绍：1999年经典歌曲精选',
+ 'play': '604412',
+ 'songs': '100',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:30 [root] INFO: 插入产品到MongoDB: {'collection': '播放',
+ 'comments': '28',
+ 'description': '介绍：眼泪一定会随着时间慢慢蒸发消失不见',
+ 'play': '407171',
+ 'songs': '60',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.163.com/playlist?id=7403030418>
+{'collection': '播放',
+ 'comments': '28',
+ 'description': '介绍：眼泪一定会随着时间慢慢蒸发消失不见',
+ 'play': '407171',
+ 'songs': '60',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:30 [root] INFO: 插入产品到MongoDB: {'collection': '播放',
+ 'comments': '3',
+ 'description': '介绍：炫目的灯光、 强烈的节奏、 喧闹的人群、 花哨的服装.... 风靡当年的劲歌热舞仍在 '
+                '是时候再来回味一下往日的潇洒了！',
+ 'play': '139056',
+ 'songs': '95',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.163.com/playlist?id=6847249919>
+{'collection': '播放',
+ 'comments': '3',
+ 'description': '介绍：炫目的灯光、 强烈的节奏、 喧闹的人群、 花哨的服装.... 风靡当年的劲歌热舞仍在 '
+                '是时候再来回味一下往日的潇洒了！',
+ 'play': '139056',
+ 'songs': '95',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:30 [root] INFO: 插入产品到MongoDB: {'collection': '播放',
+ 'comments': '60265',
+ 'description': '介绍：优质华语新歌，网易云音乐每周精选推荐。本期封面：陈奕迅',
+ 'play': '1088548992',
+ 'songs': '20',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.163.com/playlist?id=924680166>
+{'collection': '播放',
+ 'comments': '60265',
+ 'description': '介绍：优质华语新歌，网易云音乐每周精选推荐。本期封面：陈奕迅',
+ 'play': '1088548992',
+ 'songs': '20',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:30 [root] INFO: 插入产品到MongoDB: {'collection': '播放',
+ 'comments': '47',
+ 'description': '介绍：攒起甜蜜的小心思，听着冒出粉红泡泡的歌曲，跨越银河，也要来见你。',
+ 'play': '2787747',
+ 'songs': '60',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.163.com/playlist?id=7572518150>
+{'collection': '播放',
+ 'comments': '47',
+ 'description': '介绍：攒起甜蜜的小心思，听着冒出粉红泡泡的歌曲，跨越银河，也要来见你。',
+ 'play': '2787747',
+ 'songs': '60',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/playlist?id=12371765641> (referer: None)
+2024-11-11 17:43:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/playlist?id=8484246201> (referer: None)
+2024-11-11 17:43:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/playlist?id=12657710629> (referer: None)
+2024-11-11 17:43:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/playlist?id=9364024209> (referer: None)
+2024-11-11 17:43:30 [root] INFO: 插入产品到MongoDB: {'collection': '播放',
+ 'comments': '149',
+ 'description': '介绍：《伍六七》是由啊哈时光与小疯映画联合出品的原创动画作品。《伍六七》动画内的原声音乐由啊哈时光旗下厂牌啊哈音乐独家策划并发行。',
+ 'play': '284002',
+ 'songs': '65',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.163.com/playlist?id=8376978101>
+{'collection': '播放',
+ 'comments': '149',
+ 'description': '介绍：《伍六七》是由啊哈时光与小疯映画联合出品的原创动画作品。《伍六七》动画内的原声音乐由啊哈时光旗下厂牌啊哈音乐独家策划并发行。',
+ 'play': '284002',
+ 'songs': '65',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:30 [root] INFO: 插入产品到MongoDB: {'collection': '播放',
+ 'comments': '9',
+ 'description': '介绍：充电进行中',
+ 'play': '214652',
+ 'songs': '50',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.163.com/playlist?id=9251843597>
+{'collection': '播放',
+ 'comments': '9',
+ 'description': '介绍：充电进行中',
+ 'play': '214652',
+ 'songs': '50',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:30 [root] INFO: 插入产品到MongoDB: {'collection': '播放',
+ 'comments': '6',
+ 'description': '介绍：呼喊明天与自由的声音 追寻心底赤诚的理想',
+ 'play': '124442',
+ 'songs': '63',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.163.com/playlist?id=8804782200>
+{'collection': '播放',
+ 'comments': '6',
+ 'description': '介绍：呼喊明天与自由的声音 追寻心底赤诚的理想',
+ 'play': '124442',
+ 'songs': '63',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:30 [root] INFO: 插入产品到MongoDB: {'collection': '播放',
+ 'comments': '1',
+ 'description': '介绍：福茂唱片音乐股份有限公司（Linfair Records '
+                'Ltd.）是一家台湾唱片公司，曾为环球音乐旗下子公司之一，2002年正式退出环球音乐旗下，成为独立唱片公司',
+ 'play': '34174',
+ 'songs': '67',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.163.com/playlist?id=8484246204>
+{'collection': '播放',
+ 'comments': '1',
+ 'description': '介绍：福茂唱片音乐股份有限公司（Linfair Records '
+                'Ltd.）是一家台湾唱片公司，曾为环球音乐旗下子公司之一，2002年正式退出环球音乐旗下，成为独立唱片公司',
+ 'play': '34174',
+ 'songs': '67',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:30 [root] INFO: 插入产品到MongoDB: {'collection': '播放',
+ 'comments': '4',
+ 'description': '介绍：2012经典歌曲精选',
+ 'play': '105890',
+ 'songs': '99',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.163.com/playlist?id=8497878200>
+{'collection': '播放',
+ 'comments': '4',
+ 'description': '介绍：2012经典歌曲精选',
+ 'play': '105890',
+ 'songs': '99',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:31 [root] INFO: 插入产品到MongoDB: {'collection': '播放',
+ 'comments': '评论',
+ 'description': '介绍：精选热门华语流行歌曲 从热门单曲到耳熟能详的流行金曲 陪你度过每一个游戏精彩时刻',
+ 'play': '257187',
+ 'songs': '70',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.163.com/playlist?id=12371765641>
+{'collection': '播放',
+ 'comments': '评论',
+ 'description': '介绍：精选热门华语流行歌曲 从热门单曲到耳熟能详的流行金曲 陪你度过每一个游戏精彩时刻',
+ 'play': '257187',
+ 'songs': '70',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:31 [root] INFO: 插入产品到MongoDB: {'collection': '播放',
+ 'comments': '2',
+ 'description': '介绍：听见滚石时光经典。',
+ 'play': '70827',
+ 'songs': '80',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.163.com/playlist?id=8484246201>
+{'collection': '播放',
+ 'comments': '2',
+ 'description': '介绍：听见滚石时光经典。',
+ 'play': '70827',
+ 'songs': '80',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:31 [root] INFO: 插入产品到MongoDB: {'collection': '播放',
+ 'comments': '3',
+ 'description': '介绍：敲好汀的华语浪漫R&B！别人一起听歌：（暧昧）（歌词暗示）（蜜里调油）我一起听歌：不行我必须让你见识一下世界第一的歌品 '
+                '我真的急了',
+ 'play': '21557',
+ 'songs': '49',
+ 'tag': '华语-流行-R&B/Soul',
+ 'title': '无标题'}
+2024-11-11 17:43:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.163.com/playlist?id=12657710629>
+{'collection': '播放',
+ 'comments': '3',
+ 'description': '介绍：敲好汀的华语浪漫R&B！别人一起听歌：（暧昧）（歌词暗示）（蜜里调油）我一起听歌：不行我必须让你见识一下世界第一的歌品 '
+                '我真的急了',
+ 'play': '21557',
+ 'songs': '49',
+ 'tag': '华语-流行-R&B/Soul',
+ 'title': '无标题'}
+2024-11-11 17:43:31 [root] INFO: 插入产品到MongoDB: {'collection': '播放',
+ 'comments': '评论',
+ 'description': '介绍：精选热门流行歌曲，让你享受属于你的音乐狂欢！',
+ 'play': '351881',
+ 'songs': '67',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.163.com/playlist?id=9364024209>
+{'collection': '播放',
+ 'comments': '评论',
+ 'description': '介绍：精选热门流行歌曲，让你享受属于你的音乐狂欢！',
+ 'play': '351881',
+ 'songs': '67',
+ 'tag': '无',
+ 'title': '无标题'}
+2024-11-11 17:43:31 [music_detail_spider] WARNING: [93mWARNING: String request is deprecated, please use JSON data format. Detail information, please check https://github.com/rmax/scrapy-redis#features[0m
+2024-11-11 17:43:31 [music_detail_spider] WARNING: [93mWARNING: String request is deprecated, please use JSON data format. Detail information, please check https://github.com/rmax/scrapy-redis#features[0m
+2024-11-11 17:43:31 [music_detail_spider] WARNING: [93mWARNING: String request is deprecated, please use JSON data format. Detail information, please check https://github.com/rmax/scrapy-redis#features[0m
+2024-11-11 17:43:31 [music_detail_spider] WARNING: [93mWARNING: String request is deprecated, please use JSON data format. Detail information, please check https://github.com/rmax/scrapy-redis#features[0m
+2024-11-11 17:43:31 [music_detail_spider] WARNING: [93mWARNING: String request is deprecated, please use JSON data format. Detail information, please check https://github.com/rmax/scrapy-redis#features[0m
+2024-11-11 17:43:31 [music_detail_spider] WARNING: [93mWARNING: String request is deprecated, please use JSON data format. Detail information, please check https://github.com/rmax/scrapy-redis#features[0m
+2024-11-11 17:43:31 [music_detail_spider] WARNING: [93mWARNING: String request is deprecated, please use JSON data format. Detail information, please check https://github.com/rmax/scrapy-redis#features[0m
+2024-11-11 17:43:31 [music_detail_spider] WARNING: [93mWARNING: String request is deprecated, please use JSON data format. Detail information, please check https://github.com/rmax/scrapy-redis#features[0m
+2024-11-11 17:43:31 [music_detail_spider] WARNING: [93mWARNING: String request is deprecated, please use JSON data format. Detail information, please check https://github.com/rmax/scrapy-redis#features[0m
+2024-11-11 17:43:31 [music_detail_spider] WARNING: [93mWARNING: String request is deprecated, please use JSON data format. Detail information, please check https://github.com/rmax/scrapy-redis#features[0m
+2024-11-11 17:43:31 [music_detail_spider] WARNING: [93mWARNING: String request is deprecated, please use JSON data format. Detail information, please check https://github.com/rmax/scrapy-redis#features[0m
+2024-11-11 17:43:31 [music_detail_spider] WARNING: [93mWARNING: String request is deprecated, please use JSON data format. Detail information, please check https://github.com/rmax/scrapy-redis#features[0m
+2024-11-11 17:43:31 [music_detail_spider] WARNING: [93mWARNING: String request is deprecated, please use JSON data format. Detail information, please check https://github.com/rmax/scrapy-redis#features[0m
+2024-11-11 17:43:31 [music_detail_spider] WARNING: [93mWARNING: String request is deprecated, please use JSON data format. Detail information, please check https://github.com/rmax/scrapy-redis#features[0m
+2024-11-11 17:43:31 [music_detail_spider] WARNING: [93mWARNING: String request is deprecated, please use JSON data format. Detail information, please check https://github.com/rmax/scrapy-redis#features[0m
+2024-11-11 17:43:31 [music_detail_spider] WARNING: [93mWARNING: String request is deprecated, please use JSON data format. Detail information, please check https://github.com/rmax/scrapy-redis#features[0m
+2024-11-11 17:43:31 [music_detail_spider] DEBUG: Read 16 requests from 'detail_url_queue'

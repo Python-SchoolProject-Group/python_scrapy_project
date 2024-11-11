@@ -17,7 +17,7 @@ class RobotWorkPipeline:
 class MongoDBPipeline:
     def __init__(self):
         # 连接到 MongoDB
-        self.client = MongoClient('jzhangluo.com', 27017, username='root', password='123456')
+        self.client = MongoClient('10.34.13.96', 27017, username='root', password='123456')
         pymongo_logger = logging.getLogger('pymongo')
         pymongo_logger.setLevel(logging.ERROR)
         self.db = self.client['music_datas']

@@ -98,7 +98,7 @@ DOWNLOADER_MIDDLEWARES = {
     'robot_work.middlewares.CustomHeadersMiddleware': 543,  # 确保路径正确
 }  #启动中间件
 CLOSESPIDER_ITEMCOUNT = 2345  #终止条件
-REDIS_URL = 'redis://:qwertyuiop353680509.@jzhangluo.com:6379/0'  #Redis配置
+REDIS_URL = 'redis://10.34.13.96:6379/0'  #Redis配置
 SCHEDULER = "scrapy_redis.scheduler.Scheduler"  #调度器设置
 SCHEDULER_PERSIST = True  # 保持调度器的状态
 DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"  #自动去重
