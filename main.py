@@ -32,61 +32,61 @@ def menu():
 
 def key_down():
     """网易云音乐数据分析系统功能交互"""
-    option = input()
+    # option = input()
+    #
+    # if option == 'quit' or option == 'QUIT':
+    #     print("已退出！\n\n")
+    #     input()
+    #
+    #     exit(0)
 
-    if option == 'quit' or option == 'QUIT':
-        print("已退出！\n\n")
-        input()
+    # elif option == 'a' or option == 'A':
+    #     # 生成歌曲出现次数 Top10 图片
+    data_visualization_of_top_10_song()
 
-        exit(0)
+    #     return
+    # elif option == 'b' or option == 'B':
+    #     # 生成歌单贡献 UP 主 TOP10 图片
+    data_visualization_of_top_10_song_up()
 
-    elif option == 'a' or option == 'A':
-        # 生成歌曲出现次数 Top10 图片
-        data_visualization_of_top_10_song()
+    #     return
+    # elif option == 'c' or option == 'C':
+    #     # 生成网易云音乐欧美歌单播放 TOP10 图片
+    data_visualization_of_top_10_ea_song_playlists()
 
-        return
-    elif option == 'b' or option == 'B':
-        # 生成歌单贡献 UP 主 TOP10 图片
-        data_visualization_of_top_10_song_up()
+    #     return
+    # elif option == 'd' or option == 'D':
+    #     # 生成网易云音乐欧美歌单收藏 TOP10 图片
+    data_visualization_of_top_10_of_ea_song_collection()
 
-        return
-    elif option == 'c' or option == 'C':
-        # 生成网易云音乐欧美歌单播放 TOP10 图片
-        data_visualization_of_top_10_ea_song_playlists()
+    #     return
+    # elif option == 'e' or option == 'E':
+    #     # 生成网易云音乐欧美歌单评论 TOP10 图片
+    data_visualization_of_top_10_of_ea_song_comment()
 
-        return
-    elif option == 'd' or option == 'D':
-        # 生成网易云音乐欧美歌单收藏 TOP10 图片
-        data_visualization_of_top_10_of_ea_song_collection()
+    #     return
+    # elif option == 'f' or option == 'F':
+    #     # 生成欧美歌单收藏数量分布情况图
+    data_visualization_of_top_10_ea_song_collection_distribution()
+    #
+    #     return
+    # elif option == 'g' or option == 'G':
+    #     # 生成欧美歌单播放数量分布情况图片
+    data_visualization_of_top_10_ea_song_playlists_distribution()
 
-        return
-    elif option == 'e' or option == 'E':
-        # 生成网易云音乐欧美歌单评论 TOP10 图片
-        data_visualization_of_top_10_of_ea_song_comment()
+    #     return
+    # else:
+    #     print("选择错误，请重新输入！\n\n")
+    #     input()
 
-        return
-    elif option == 'f' or option == 'F':
-        # 生成欧美歌单收藏数量分布情况图
-        data_visualization_of_top_10_ea_song_collection_distribution()
-
-        return
-    elif option == 'g' or option == 'G':
-        # 生成欧美歌单播放数量分布情况图片
-        data_visualization_of_top_10_ea_song_playlists_distribution()
-
-        return
-    else:
-        print("选择错误，请重新输入！\n\n")
-        input()
-
-        return
+    return
 
 
 if __name__ == '__main__':
     """运行界面及功能代码"""
-    while True:
-        menu()
-        key_down()
+
+        #menu()
+    key_down()
 
         # 清屏
-        os.system('cls')
+    os.system('cls')

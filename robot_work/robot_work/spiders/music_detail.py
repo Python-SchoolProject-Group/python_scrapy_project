@@ -14,7 +14,7 @@ class MusicDetailSpider(RedisSpider):
 
     def __init__(self, *args, **kwargs):
         super(MusicDetailSpider, self).__init__(*args, **kwargs)
-        self.r = redis.StrictRedis(host='10.34.13.96', port=6379, db=0)
+        self.r = redis.StrictRedis(host='localhost', port=6379, db=0)
 
     def start_requests(self):
         while True:
