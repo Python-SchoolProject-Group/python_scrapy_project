@@ -26,8 +26,8 @@ jobs:
       uses: docker/login-action@v2
       with:
         registry: dockerhub.jzhangluo.com # 替换为你的自建 Docker Registry URL，如 "myregistry.example.com"
-        username: "self" # 设置为 GitHub Secrets 中的用户名
-        password: "Zl123456"
+        username: "" #你的dockerhub账号
+        password: "" #你的dockerhub密码
 
     # 标记并推送 Docker 镜像到 Docker Hub
     - name: Tag and Push Docker Image

@@ -47,7 +47,7 @@ def key_down():
     #     return
     # elif option == 'b' or option == 'B':
     #     # 生成歌单贡献 UP 主 TOP10 图片
-    data_visualization_of_top_10_song_up()
+    #data_visualization_of_top_10_song_up()
 
     #     return
     # elif option == 'c' or option == 'C':
